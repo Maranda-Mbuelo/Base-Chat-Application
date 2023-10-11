@@ -1,0 +1,20 @@
+<!-- chatroom.component.html -->
+<div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- User List Wrapper -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <app-user-list></app-user-list>
+      </div>
+  
+      <!-- Feed Wrapper -->
+      <div #scroller class="bg-white rounded-lg shadow-md p-4">
+        <app-feed></app-feed>
+      </div>
+  
+      <!-- Chat Form Wrapper -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <app-chat-form></app-chat-form>
+      </div>
+    </div>
+  </div>
+  

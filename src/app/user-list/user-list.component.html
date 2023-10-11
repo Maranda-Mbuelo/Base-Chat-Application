@@ -1,0 +1,10 @@
+<div class="p-4">
+    <h2 class="text-2xl font-bold mb-4">User List</h2>
+    <ul class="space-y-4">
+      <li class="flex items-center space-x-2" *ngFor="let user of users">
+        <img class="w-8 h-8 rounded-full" [src]="user.avatar" alt="User Avatar">
+        <span>{{ user.displayName }}</span>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,6 @@
+<div *ngFor="let message of chatMessages; let i = index" class="mb-2">
+    <span class="font-semibold">{{ message.username }} ({{ i }}):</span>
+    <span class="ml-2">{{ message.message }}</span>
+    <div class="time-sent">{{ message.timeSent | date: 'HH:mm' }}</div> <!-- Display only the time -->
+  </div>
+  
